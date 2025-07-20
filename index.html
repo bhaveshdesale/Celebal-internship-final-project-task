@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixel Login Landing</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="landing-body">
+
+  <!-- 🔁 Video Background -->
+  <video autoplay muted loop playsinline class="bg-video">
+    <source src="./assets/pixel.mp4" type="video/mp4" />
+    Your browser doeas not support the video tag.
+  </video>
+
+  <!-- ✨ Foreground UI (Text + Button) -->
+  <div class="landing-container">
+    <h1 class="landing-title">Final Internship Project</h1>
+    <p class="landing-subtitle">By Bhavesh Desale</p>
+    <a href="login.html" class="login-button">Explore</a>
+  </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+<script>
+
+  anime({
+    targets: '.landing-title',
+    translateY: [-100, 0],
+    opacity: [0, 1],
+    easing: 'easeOutElastic(1, .8)',
+    duration: 1500,
+    delay: 200
+  });
+
+
+  anime({
+    targets: '.landing-subtitle',
+    translateY: [50, 0],
+    opacity: [0, 1],
+    easing: 'easeOutExpo',
+    duration: 1200,
+    delay: 800
+  });
+
+
+  anime({
+    targets: '.login-button',
+    scale: [0, 1],
+    opacity: [0, 1],
+    easing: 'easeOutBack',
+    duration: 1000,
+    delay: 1300
+  });
+
+</script>
+
+</body>
+</html>

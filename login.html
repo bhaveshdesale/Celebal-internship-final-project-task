@@ -1,0 +1,50 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css" />
+  <!-- SweetAlert2 -->
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet" />
+</head>
+<body class="login-body">
+  <video autoplay muted loop playsinline class="bg-video">
+  <source src="assets/login.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+  <div class="login-container">
+    <h2 class="login-title">Login</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Email or Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <div class="remember-me">
+        <input type="checkbox" id="rememberMe" />
+        <label for="rememberMe">Remember Me</label>
+      </div>
+      <div id="strengthFeedback" class="strength-feedback"></div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+<!-- 👆 Top-Right Button -->
+<button id="showCredentialsBtn" class="credentials-toggle">🎮 Get Credentials</button>
+
+<!-- 🎟️ Credentials Info Card -->
+<div class="credentials-card" id="credentialsCard">
+  <button id="closeCredentials" class="close-btn">❌</button>
+  <h3>Need Help?</h3>
+  <p>First of all, try to guess it yourself!</p>
+  <p>Enter anything, Try fake credentials</p>
+  <p>And once you’re ready...</p>
+  <p><strong>Username:</strong> <span style="color:#FFD83E">celebal</span></p>
+  <p><strong>Password:</strong> <span style="color:#FFD83E">celebal@2025</span></p>
+</div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/validator/13.9.0/validator.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>

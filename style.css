@@ -1,0 +1,99 @@
+/* ============ Global Reset ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ============ Google Font (Pixel Style) ============ */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Video Background */
+
+
+/* ============ Base Styles for Landing Page ============ */
+body.landing-body {
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #000; /* Fallback if video doesn't load */
+}
+
+/* ============ Video Background ============ */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.95;
+}
+
+/* ============ Foreground UI ============ */
+.landing-container {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  padding: 2rem;
+}
+
+.landing-title {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 4px 4px #000;
+}
+
+.landing-subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+/* ============ Pixel-Style Login Button ============ */
+.login-button {
+  margin-top: 2rem;
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+  background: lab(64.6% 11.85 -28.27);
+  color: #3b0a70;
+  text-decoration: none;
+  display: inline-block;
+  border: 4px solid #000;
+  box-shadow: 6px 6px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  /* ✅ Ensure it's visible before JS kicks in */
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+.login-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 10px 10px #000;
+}
+
+/* ============ Responsive ============ */
+@media (max-width: 600px) {
+  .landing-title {
+    font-size: 2rem;
+  }
+
+  .landing-subtitle {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+  }
+
+  .login-button {
+    font-size: 0.8rem;
+    padding: 0.8rem 1.8rem;
+  }
+}
