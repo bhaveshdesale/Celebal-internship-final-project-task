@@ -47,5 +47,5 @@ Welcome to the **Pixel-Themed Animated Login Page** built as the final internshi
 
 ---
 
-### 📦 Developed By
+### 👨‍💻 Developed By
 **Bhavesh Desale**
