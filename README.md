@@ -19,7 +19,7 @@ Welcome to the **Pixel-Themed Animated Login Page** built as the final internshi
 ---
 
 ### 🔗 Live Demo
-🌐 [View Live Project](https://your-live-url-here.com)  
+🌐 [View Live Project](https://bhaveshdesale.github.io/Celebal-internship-final-project-task/)  
 
 
 ---
